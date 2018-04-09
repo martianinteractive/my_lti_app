@@ -71,8 +71,8 @@ applications = [
   },
   {
     key: Application::HELLOWORLD,
-    name: "LTI Starter App",
-    description: "LTI Starter App by Atomic Jolt",
+    name: "My App",
+    description: "My App by Atomic Jolt",
     client_application_name: "hello_world",
     # List Canvas API methods the app is allowed to use. A full list of constants can be found in canvas_urls
     canvas_api_permissions: {
@@ -88,7 +88,7 @@ applications = [
     },
     default_config: {},
     lti_config: {
-      title: "LTI Starter App",
+      title: "My App",
       description: "The Atomic Jolt LTI Starter app",
       privacy_level: "public",
       icon: "oauth_icon.png",
@@ -96,19 +96,19 @@ applications = [
         canvas_course_id: "$Canvas.course.id",
       },
       course_navigation: {
-        text: "LTI Starter App",
+        text: "My App",
         visibility: "public",
       },
       editor_button: {
-        text: "LTI Starter App - Content Item Select",
+        text: "My App - Content Item Select",
         visibility: "admins",
         icon_url: "atomicjolt.png",
       },
       assignment_selection: {
-        text: "LTI Starter App - Content Item Select",
+        text: "My App - Content Item Select",
       },
       link_selection: {
-        text: "LTI Starter App - Content Item Select",
+        text: "My App - Content Item Select",
       },
       content_migration: true,
     },

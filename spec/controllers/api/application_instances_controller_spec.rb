@@ -123,11 +123,11 @@ RSpec.describe Api::ApplicationInstancesController, type: :controller do
               application_instance: {
                 lti_secret: "12345",
                 lti_config: {
-                  title: "LTI Starter App",
+                  title: "My App",
                   privacy_level: "anonymous",
                   icon: "oauth_icon.png",
                   course_navigation: {
-                    text: "LTI Starter App",
+                    text: "My App",
                     visibility: "public",
                   },
                 },
