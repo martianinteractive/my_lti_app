@@ -1,4 +1,4 @@
-class ChangeRrIntegerToBigint < ActiveRecord::Migration[5.0]
+class ChangeRrIntegerToBigint < ActiveRecord::Migration[5.1]
   def up
     change_column :authentications, :id, :bigint
     change_column :permissions, :id, :bigint

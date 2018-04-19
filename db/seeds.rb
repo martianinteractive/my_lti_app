@@ -45,9 +45,9 @@ admin_api_permissions = {
 
 bundles = [
   {
-    name: "Hello World",
-    key: Application::HELLOWORLD,
-    applications: [Application::HELLOWORLD],
+    name: "Review Dashboard",
+    key: Application::DASHBOARD,
+    applications: [Application::DASHBOARD],
     shared_tenant: true,
   },
 ]
@@ -70,10 +70,10 @@ applications = [
     }],
   },
   {
-    key: Application::HELLOWORLD,
-    name: "My App",
-    description: "My App by Atomic Jolt",
-    client_application_name: "hello_world",
+    key: Application::DASHBOARD,
+    name: "Review Dashboard",
+    description: "Pearson Review Dasboard",
+    client_application_name: "dashboard",
     # List Canvas API methods the app is allowed to use. A full list of constants can be found in canvas_urls
     canvas_api_permissions: {
       default: [],
@@ -88,32 +88,32 @@ applications = [
     },
     default_config: {},
     lti_config: {
-      title: "My App",
-      description: "The Atomic Jolt LTI Starter app",
+      title: "Review Dashboard",
+      description: "Pearson review dashboard",
       privacy_level: "public",
       icon: "oauth_icon.png",
       custom_fields: {
         canvas_course_id: "$Canvas.course.id",
       },
       course_navigation: {
-        text: "My App",
+        text: "Review Dashboard",
         visibility: "public",
       },
       editor_button: {
-        text: "My App - Content Item Select",
+        text: "Review Dashboard - Content Item Select",
         visibility: "admins",
         icon_url: "atomicjolt.png",
       },
       assignment_selection: {
-        text: "My App - Content Item Select",
+        text: "Review Dashboard - Content Item Select",
       },
       link_selection: {
-        text: "My App - Content Item Select",
+        text: "Review Dashboard - Content Item Select",
       },
       content_migration: true,
     },
     application_instances: [{
-      lti_secret: Rails.env.production? ? nil : secrets.hello_world_lti_secret,
+      lti_secret: Rails.env.production? ? nil : secrets.dashboard_lti_secret,
       site_url: secrets.canvas_url,
       # This is only required if the app needs API access and doesn't want each user to do the oauth dance
       canvas_token: secrets.canvas_token,

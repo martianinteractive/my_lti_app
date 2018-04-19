@@ -1,4 +1,4 @@
-class CreateApplicationBundles < ActiveRecord::Migration[5.0]
+class CreateApplicationBundles < ActiveRecord::Migration[5.1]
   def change
     create_table :application_bundles do |t|
       t.integer :application_id

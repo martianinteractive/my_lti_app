@@ -1,4 +1,4 @@
-class CreateOauthStates < ActiveRecord::Migration
+class CreateOauthStates < ActiveRecord::Migration[5.1]
   def change
     create_table :oauth_states do |t|
       t.string :state

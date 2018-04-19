@@ -1,4 +1,4 @@
-class MakeApplicationLtiConfig < ActiveRecord::Migration[5.0]
+class MakeApplicationLtiConfig < ActiveRecord::Migration[5.1]
   def change
     add_column :applications, :lti_config, :jsonb
 

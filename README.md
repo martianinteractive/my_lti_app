@@ -354,3 +354,18 @@ If an admin changes the developer key and secret then existing authentications a
 LMS::Canvas::InvalidRequestException (Status: 400 Error:  ....
 
 To fix this remove all entries in the Authentications table. In the future we should detect an invalid api token and then remove the db record forcing a new OAuth dance.
+
+
+questions
+
+1. Does this work with other LMSes?
+2. 2 tools installed?
+
+
+https:
+use ngrok or nginx
+bundles application can share more than one app
+
+canvas token: generate using a token from the profile section. That would have the permisison of that user. use: as_user_id would have the ability to id the user.
+
+

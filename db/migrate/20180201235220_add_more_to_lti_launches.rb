@@ -1,4 +1,4 @@
-class AddMoreToLtiLaunches < ActiveRecord::Migration[5.0]
+class AddMoreToLtiLaunches < ActiveRecord::Migration[5.1]
   def up
     add_column :lti_launches, :context_id, :string
     add_column :lti_launches, :tool_consumer_instance_guid, :string

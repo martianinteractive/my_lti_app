@@ -1,4 +1,4 @@
-class CreateLtiLaunches < ActiveRecord::Migration[5.0]
+class CreateLtiLaunches < ActiveRecord::Migration[5.1]
   def change
     create_table :lti_launches do |t|
       t.jsonb :config

@@ -1,4 +1,4 @@
-class CreateCanvasCourses < ActiveRecord::Migration[5.0]
+class CreateCanvasCourses < ActiveRecord::Migration[5.1]
   def change
     unless table_exists? :canvas_courses
       create_table :canvas_courses do |t|

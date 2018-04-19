@@ -25,7 +25,7 @@ class Application < ActiveRecord::Base
 
   ADMIN = "admin".freeze
   AUTH = "auth".freeze
-  HELLOWORLD = "helloworld".freeze
+  DASHBOARD = "dashboard".freeze
 
   def create_instance(site: nil, bundle_instance: nil, tenant: nil)
     application_instance = application_instances.find_or_create_by(

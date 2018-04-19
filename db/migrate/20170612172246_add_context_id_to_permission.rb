@@ -1,4 +1,4 @@
-class AddContextIdToPermission < ActiveRecord::Migration[5.0]
+class AddContextIdToPermission < ActiveRecord::Migration[5.1]
   def change
     add_column :permissions, :context_id, :string
     add_index :permissions, :context_id

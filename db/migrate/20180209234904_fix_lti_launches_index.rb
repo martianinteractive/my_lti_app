@@ -1,4 +1,4 @@
-class FixLtiLaunchesIndex < ActiveRecord::Migration[5.0]
+class FixLtiLaunchesIndex < ActiveRecord::Migration[5.1]
   def up
     remove_index :lti_launches, :token
     add_index :lti_launches, [:token, :context_id], unique: true

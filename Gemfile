@@ -49,6 +49,7 @@ gem "will_paginate"
 
 # Application secrets checker
 gem "nuclear_secrets"
+gem 'active_record_query_trace'
 
 group :development do
   # UI

@@ -1,4 +1,4 @@
-class Initial < ActiveRecord::Migration
+class Initial < ActiveRecord::Migration[5.1]
 
   create_table "authentications", force: :cascade do |t|
     t.integer  "user_id"

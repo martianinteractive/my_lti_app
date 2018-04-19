@@ -1,4 +1,4 @@
-class AddAuthToAppInstanceAndCourse < ActiveRecord::Migration[5.0]
+class AddAuthToAppInstanceAndCourse < ActiveRecord::Migration[5.1]
   def change
     unless column_exists? :authentications, :application_instance_id
       add_column :authentications, :application_instance_id, :integer

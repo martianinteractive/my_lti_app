@@ -1,4 +1,4 @@
-class ChangeLtiIntegerToBigint < ActiveRecord::Migration[5.0]
+class ChangeLtiIntegerToBigint < ActiveRecord::Migration[5.1]
   def up
     change_column :application_bundles, :id, :bigint
     change_column :application_instances, :id, :bigint

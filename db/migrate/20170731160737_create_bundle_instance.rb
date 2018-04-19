@@ -1,4 +1,4 @@
-class CreateBundleInstance < ActiveRecord::Migration[5.0]
+class CreateBundleInstance < ActiveRecord::Migration[5.1]
   def change
     create_table :bundle_instances do |t|
       t.integer :site_id

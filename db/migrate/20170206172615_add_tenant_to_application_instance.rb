@@ -1,4 +1,4 @@
-class AddTenantToApplicationInstance < ActiveRecord::Migration
+class AddTenantToApplicationInstance < ActiveRecord::Migration[5.1]
   def change
     add_column :application_instances, :tenant, :string
   end
