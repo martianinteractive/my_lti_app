@@ -5,6 +5,7 @@ import errors from 'atomic-fuel/libs/reducers/errors';
 import application from './application';
 import contentItemSelection from './content_item_selection';
 import quizzes from './quizzes';
+import students from './students';
 
 const rootReducer = combineReducers({
   settings,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   errors,
   contentItemSelection,
   quizzes,
+  students,
 });
 
 export default rootReducer;
