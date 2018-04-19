@@ -23,8 +23,8 @@ class Application < ActiveRecord::Base
   # app: Stand alone applications that don't require an lti launch
   enum kind: %i{lti admin app}
 
-  ADMIN = "admin".freeze
-  AUTH = "auth".freeze
+  ADMIN = "proctorcamadmin".freeze
+  AUTH = "proctorcamauth".freeze
   DASHBOARD = "dashboard".freeze
 
   def create_instance(site: nil, bundle_instance: nil, tenant: nil)

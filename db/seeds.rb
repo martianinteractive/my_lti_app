@@ -85,6 +85,13 @@ applications = [
         "urn:lti:role:ims/lis/Instructor",
         "urn:lti:role:ims/lis/Learner",
       ],
+      LIST_QUIZZES_IN_COURSE: [
+        "urn:lti:sysrole:ims/lis/SysAdmin",
+        "urn:lti:sysrole:ims/lis/Administrator",
+        "urn:lti:instrole:ims/lis/Administrator",
+        "urn:lti:role:ims/lis/Instructor",
+        "urn:lti:role:ims/lis/Learner",
+      ],
     },
     default_config: {},
     lti_config: {
